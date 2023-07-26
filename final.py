@@ -56,9 +56,6 @@ class Admin:
     def create_account(self, account_number, initial_balance=0):
         self.accounts[account_number] = initial_balance
 
-    def get_account_balance(self, account_number):
-        return self.accounts.get(account_number, "Account not found.")
-
     def check_total_available_balance(self):
         return sum(self.accounts.values())
 
