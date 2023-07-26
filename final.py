@@ -9,7 +9,7 @@ class User:
         self.loan_taken = False
         self.transaction_history = []
 
-        def deposit(self, amount):
+    def deposit(self, amount):
         if amount > 0:
             self.balance += amount
         else:
