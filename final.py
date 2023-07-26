@@ -68,8 +68,8 @@ class Admin:
 def main():
     admin = Admin()
     admin.create_account("1233532", initial_balance=1000)
-    balance = admin.get_account_balance("1233532")
-    print("Account balance:", balance)
+    balance = admin.check_balance("1233532")
+
 
 if __name__ == "__main__":
     main()
